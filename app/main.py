@@ -5,7 +5,6 @@ Task Management Dashboard - Main Application Entry Point
 import logging
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
 
 from app.config import settings
 from app.api import auth_router, users_router, tasks_router, websocket_router, email_router, meetings_router
@@ -40,9 +39,6 @@ app.include_router(tasks_router)
 app.include_router(websocket_router)
 app.include_router(email_router)
 app.include_router(meetings_router)
-
-# Mount static files
-# Frontend removed - will be replaced with Next.js frontend
 
 # Event handlers
 app.add_event_handler("startup", startup_handler)
