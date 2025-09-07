@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Welcome to Task Management Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+        .content {
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-radius: 0 0 10px 10px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 12px;
+        }
+        .feature {
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 4px solid #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎉 Welcome to Task Management Dashboard!</h1>
+            <p>Your account has been successfully created</p>
+        </div>
+        
+        <div class="content">
+            <h2>Hello {{ user_name }}!</h2>
+            <p>Welcome to your new task management system. You're all set to start organizing your tasks and boosting your productivity!</p>
+            
+            <h3>🚀 What you can do:</h3>
+            <div class="feature">
+                <strong>Create Tasks:</strong> Add new tasks with titles, descriptions, and priorities
+            </div>
+            <div class="feature">
+                <strong>Track Progress:</strong> Update task status from pending to in-progress to completed
+            </div>
+            <div class="feature">
+                <strong>Real-time Updates:</strong> Get instant notifications when tasks are updated
+            </div>
+            <div class="feature">
+                <strong>Email Notifications:</strong> Receive email updates about your task progress
+            </div>
+            
+            <p>Ready to get started? Click the button below to access your dashboard:</p>
+            
+            <a href="{{ dashboard_url }}" class="button">Go to Dashboard</a>
+            
+            <p>If you have any questions or need help, feel free to reach out to our support team.</p>
+        </div>
+        
+        <div class="footer">
+            <p>This is an automated message from Task Management Dashboard</p>
+            <p>© 2025 Task Management Dashboard. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
