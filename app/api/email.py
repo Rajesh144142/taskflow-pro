@@ -206,7 +206,7 @@ async def send_welcome_email(
             template_name="welcome",
             template_data={
                 "user_name": current_user.username,
-                "dashboard_url": "http://localhost:8000/frontend/index.html"
+                "dashboard_url": "http://localhost:3000"  # Next.js frontend URL
             }
         )
         

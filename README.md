@@ -79,7 +79,7 @@ taskflow-pro/
 │   ├── config.py              # Application configuration
 │   ├── database.py            # Database configuration
 │   └── main.py               # Application entry point
-├── frontend/                  # Static frontend files
+# Frontend removed - Next.js frontend coming soon
 ├── requirements.txt           # Python dependencies
 └── README.md                 # This file
 ```
@@ -147,7 +147,7 @@ taskflow-pro/
 7. **Access the application**
    - **API Documentation**: http://localhost:8000/docs
    - **Health Check**: http://localhost:8000/health
-   - **Frontend**: http://localhost:8000/frontend/
+   - **Next.js Frontend**: Coming soon at http://localhost:3000
 
 ## 🗄️ Database Management
 

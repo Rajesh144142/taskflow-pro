@@ -24,7 +24,7 @@ async def startup_handler():
     logger.info("Application startup completed")
     logger.info("Available endpoints:")
     logger.info("  - API Docs: /docs")
-    logger.info("  - Frontend: /frontend/index.html")
+    logger.info("  - Next.js Frontend: Coming soon")
     logger.info("  - Health: /health")
     logger.info("  - DB Health: /health/db")
 

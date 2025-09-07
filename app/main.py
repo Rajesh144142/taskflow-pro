@@ -42,7 +42,7 @@ app.include_router(email_router)
 app.include_router(meetings_router)
 
 # Mount static files
-app.mount("/frontend", StaticFiles(directory="frontend"), name="frontend")
+# Frontend removed - will be replaced with Next.js frontend
 
 # Event handlers
 app.add_event_handler("startup", startup_handler)
@@ -56,5 +56,5 @@ async def root():
         "message": "Task Management Dashboard API",
         "version": settings.version,
         "docs": "/docs",
-        "frontend": "/frontend/index.html"
+        "nextjs_frontend": "Coming soon - Next.js frontend"
     }
