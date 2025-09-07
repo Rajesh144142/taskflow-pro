@@ -44,13 +44,3 @@ app.include_router(meetings_router)
 app.add_event_handler("startup", startup_handler)
 app.add_event_handler("shutdown", shutdown_handler)
 
-
-@app.get("/")
-async def root():
-    """Root endpoint with application information."""
-    return {
-        "message": "Task Management Dashboard API",
-        "version": settings.version,
-        "docs": "/docs",
-        "nextjs_frontend": "Coming soon - Next.js frontend"
-    }
