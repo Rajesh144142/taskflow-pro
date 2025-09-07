@@ -27,7 +27,7 @@ A comprehensive, enterprise-grade task and meeting management system built with 
 
 ### 🔄 **Automated Background Jobs**
 - **Task Reminders**: Every 12 hours for pending tasks
-- **Meeting Reminders**: Every 5 minutes based on user settings
+- **Meeting Reminders**: Every minute for accurate timing based on user settings
 - **Daily Summaries**: Daily at 9 AM
 - **Server Health Monitoring**: Every 5 minutes
 - **Data Cleanup**: Daily maintenance tasks
@@ -277,7 +277,7 @@ The application runs several automated background jobs:
 | Job | Frequency | Description |
 |-----|-----------|-------------|
 | **Task Reminders** | Every 12 hours | Send reminders for pending tasks |
-| **Meeting Reminders** | Every 5 minutes | Send meeting reminders based on user settings |
+| **Meeting Reminders** | Every minute | Send meeting reminders based on user settings |
 | **Daily Summaries** | Daily at 9 AM | Send daily task progress reports |
 | **Server Monitoring** | Every 5 minutes | Monitor server health and send alerts |
 | **Data Cleanup** | Daily at 2 AM | Clean up old completed tasks |
