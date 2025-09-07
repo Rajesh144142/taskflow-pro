@@ -3,6 +3,7 @@ Application startup and shutdown handlers.
 """
 
 import logging
+import os
 from sqlalchemy import text
 
 from app.config import settings
@@ -17,6 +18,10 @@ async def startup_handler():
     logger.info("Starting Task Management Dashboard...")
     logger.info(f"Version: {settings.version}")
     logger.info(f"Server: http://{settings.host}:{settings.port}")
+    
+    # Debug logging for environment variables
+    logger.info(f"🔍 DEBUG: DATABASE_URL = {settings.database_url}")
+    logger.info(f"🔍 DEBUG: Environment variables: {dict(os.environ)}")
     
     await _setup_database()
     await _setup_scheduler()
