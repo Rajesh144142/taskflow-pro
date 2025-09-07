@@ -228,7 +228,7 @@ class MeetingService:
                 AND NOT EXISTS (
                     SELECT 1 FROM meeting_reminders mr 
                     WHERE mr.meeting_id = m.id 
-                    AND mr.sent_at >= :now - INTERVAL '1 hour'
+                    AND mr.reminder_sent_at >= :now - INTERVAL '1 hour'
                 )
             """)
             
