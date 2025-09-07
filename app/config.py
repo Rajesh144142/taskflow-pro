@@ -12,7 +12,7 @@ class Settings:
     """
     
     # Database - Node.js style: process.env.DATABASE_URL || 'default'
-    database_url: str = os.environ.get('DATABASE_URL', 'postgresql://postgres:password@localhost:5432/task_dashboard')
+    database_url: str = os.environ.get('DATABASE_URL', 'postgresql://postgres:zBGuBMUvLEisDYIvIQIFiymwFDtafoIx@ballast.proxy.rlwy.net:51966/railway')
     
     # JWT - Node.js style: process.env.SECRET_KEY || 'default'
     secret_key: str = os.environ.get('SECRET_KEY', 'your-super-secret-key-change-this-in-production')
