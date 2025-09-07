@@ -23,7 +23,7 @@ class Settings:
     version: str = os.environ.get('VERSION', '1.0.0')
     debug: bool = os.environ.get('DEBUG', 'true').lower() == 'true'
     host: str = os.environ.get('HOST', '0.0.0.0')
-    port: int = int(os.environ.get('PORT', '8080'))
+    port: int = int(os.environ.get('PORT', '8000'))
     
     # CORS - Node.js style: process.env.ALLOWED_ORIGINS || 'default'
     allowed_origins: List[str] = os.environ.get('ALLOWED_ORIGINS', 'http://localhost:3000,http://localhost:8000').split(',')

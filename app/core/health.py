@@ -9,17 +9,6 @@ from app.config import settings
 router = APIRouter()
 
 
-@router.get("/")
-async def root():
-    """Root endpoint for Railway health checks."""
-    return {
-        "message": "Task Management Dashboard API",
-        "status": "running",
-        "version": settings.version,
-        "docs": "/docs"
-    }
-
-
 @router.get("/health")
 async def health_check():
     """General application health check."""
