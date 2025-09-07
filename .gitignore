@@ -220,11 +220,15 @@ $RECYCLE.BIN/
 *.log
 logs/
 
-# Temporary files
-*.tmp
-*.temp
-temp/
-tmp/
+# Sample data and test scripts
+*_sample_data.py
+*sample_data.py
+test_data.py
+demo_*.py
+example_*.py
+
+# Temporary files and command outputs
+how*
 
 # Configuration files with sensitive data
 .env.local
